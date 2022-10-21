@@ -48,66 +48,66 @@ public class Main {
 
         // Construct an interpreter and run it on the parse tree
         Interpreter interpreter = new Interpreter();
-        Expr result=interpreter.visit(parseTree);
+        AST result=interpreter.visit(parseTree);
 
     }
 }
 
-class Interpreter extends AbstractParseTreeVisitor<Expr> implements implVisitor<Expr> {
+class Interpreter extends AbstractParseTreeVisitor<AST> implements implVisitor<AST> {
 
 
     @Override
-    public Expr visitStart(implParser.StartContext ctx) {
+    public AST visitStart(implParser.StartContext ctx) {
+        return null;
+    }
+
+
+    public AST visitReset(implParser.ResetContext ctx) {
         return null;
     }
 
     @Override
-    public Expr visitReset(implParser.ResetContext ctx) {
+    public AST visitOscillator(implParser.OscillatorContext ctx) {
         return null;
     }
 
     @Override
-    public Expr visitOscillator(implParser.OscillatorContext ctx) {
+    public AST visitExpr(implParser.ExprContext ctx) {
         return null;
     }
 
     @Override
-    public Expr visitExpr(implParser.ExprContext ctx) {
+    public AST visitLatch(implParser.LatchContext ctx) {
         return null;
     }
 
     @Override
-    public Expr visitLatch(implParser.LatchContext ctx) {
+    public AST visitOutput(implParser.OutputContext ctx) {
         return null;
     }
 
     @Override
-    public Expr visitOutput(implParser.OutputContext ctx) {
+    public AST visitAND(implParser.ANDContext ctx) {
         return null;
     }
 
     @Override
-    public Expr visitAND(implParser.ANDContext ctx) {
+    public AST visitONE(implParser.ONEContext ctx) {
         return null;
     }
 
     @Override
-    public Expr visitONE(implParser.ONEContext ctx) {
+    public AST visitZERO(implParser.ZEROContext ctx) {
         return null;
     }
 
     @Override
-    public Expr visitZERO(implParser.ZEROContext ctx) {
+    public AST visitCircuit(implParser.CircuitContext ctx) {
         return null;
     }
 
     @Override
-    public Expr visitCircuit(implParser.CircuitContext ctx) {
-        return null;
-    }
-
-    @Override
-    public Expr visitSimulate(implParser.SimulateContext ctx) {
+    public AST visitSimulate(implParser.SimulateContext ctx) {
         return null;
     }
 

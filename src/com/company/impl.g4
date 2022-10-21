@@ -8,7 +8,6 @@ reset
     :    oscillator*
     ;
 
-
 oscillator
     :  input
     ;
@@ -91,20 +90,6 @@ LONGCOMMENT : '/*' (~[*]+ | '*'~[/])* '*/' -> skip;
 //latch: '0';
 //output: NUMBER;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //start   : expr EOF;
 //
 //expr    : comparing*;
@@ -132,9 +117,6 @@ LONGCOMMENT : '/*' (~[*]+ | '*'~[/])* '*/' -> skip;
 //WHITESPACE : [ \n\t\r]+ -> skip;
 //COMMENT : '//' ~('\n')* -> skip;
 //LONGCOMMENT : '/*' (~[*]+ | '*'~[/])* '*/' -> skip;
-
-
-
 
 //reset  EOF #Input;  //resets+=input*  EOF;
 
