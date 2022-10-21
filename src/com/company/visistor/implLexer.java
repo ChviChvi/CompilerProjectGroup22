@@ -1,5 +1,5 @@
 // Generated from C:/Users/Christiaan Vink/IdeaProjects/CompilerProjectGroup22/src/com/company\impl.g4 by ANTLR 4.10.1
-package com.company;
+package com.company.visistor;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;

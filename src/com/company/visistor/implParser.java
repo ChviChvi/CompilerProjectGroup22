@@ -1,13 +1,10 @@
 // Generated from C:/Users/Christiaan Vink/IdeaProjects/CompilerProjectGroup22/src/com/company\impl.g4 by ANTLR 4.10.1
-package com.company;
+package com.company.visistor;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.misc.*;
 import org.antlr.v4.runtime.tree.*;
 import java.util.List;
-import java.util.Iterator;
-import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class implParser extends Parser {
@@ -165,7 +162,7 @@ public class implParser extends Parser {
 		}
 	}
 
-	public final ResetContext reset() throws RecognitionException {
+	public final void reset() throws RecognitionException {
 		ResetContext _localctx = new ResetContext(_ctx, getState());
 		enterRule(_localctx, 2, RULE_reset);
 		int _la;
@@ -206,7 +203,7 @@ public class implParser extends Parser {
 		finally {
 			exitRule();
 		}
-		return _localctx;
+		//return _localctx;
 	}
 
 	public static class OscillatorContext extends ParserRuleContext {

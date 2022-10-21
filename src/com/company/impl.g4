@@ -5,7 +5,7 @@ start
     ;
 
 reset
-    :    oscillator* returns '.'
+    :    oscillator*
     ;
 
 
@@ -14,7 +14,7 @@ oscillator
     ;
 
 oscillatorM
-    : simulate #Output
+    : simulate
     ;
 
 and
@@ -191,4 +191,4 @@ LONGCOMMENT : '/*' (~[*]+ | '*'~[/])* '*/' -> skip;
 //ZERO: '0';
 //ONE: '1';
 //AND: '&&';
-//OUTPUT: ('0'..'1');
+//OUTPUT: ('0'..'1');2
